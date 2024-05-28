@@ -11,8 +11,7 @@ public class MCCourseMod implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-
-
+		// Very important Commment!
 		LOGGER.info("Hello Fabric world!");
 	}
 }
