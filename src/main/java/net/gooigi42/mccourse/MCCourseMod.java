@@ -2,6 +2,9 @@ package net.gooigi42.mccourse;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.gooigi42.mccourse.block.ModBlocks;
+import net.gooigi42.mccourse.item.ModItems;
+import net.gooigi42.mccourse.world.gen.ModWorldGeneration;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -12,6 +15,8 @@ public class MCCourseMod implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		// Very important Commment!
-		LOGGER.info("Hello Fabric world!");
+		ModItems.registerModItems();
+		ModBlocks.registerModBlocks();
+		ModWorldGeneration.generateModWorldGeneration();
 	}
 }
